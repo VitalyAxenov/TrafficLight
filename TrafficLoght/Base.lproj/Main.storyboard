@@ -17,27 +17,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n7J-gW-g3K">
-                                <rect key="frame" x="112.66666666666669" y="74" width="150" height="674"/>
+                                <rect key="frame" x="104" y="74" width="167" height="674"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="5n5-yk-pff">
-                                        <rect key="frame" x="4.3333333333333286" y="0.0" width="141" height="500.33333333333331"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5n5-yk-pff">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="500.33333333333331"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rws-tb-3G0">
-                                                <rect key="frame" x="0.0" y="0.0" width="141" height="140.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="166.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Rws-tb-3G0" secondAttribute="height" multiplier="1:1" id="cz4-oT-EEY"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddj-oA-E23">
-                                                <rect key="frame" x="0.0" y="179.66666666666666" width="141" height="140.99999999999997"/>
+                                                <rect key="frame" x="0.0" y="166.66666666666666" width="167" height="166.99999999999997"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ddj-oA-E23" secondAttribute="height" multiplier="1:1" id="wQh-b8-D0P"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Rj-gl-ci6">
-                                                <rect key="frame" x="0.0" y="359.66666666666669" width="141" height="140.66666666666669"/>
+                                                <rect key="frame" x="0.0" y="333.66666666666669" width="167" height="166.66666666666669"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="0Rj-gl-ci6" secondAttribute="height" multiplier="1:1" id="467-3G-9To"/>
@@ -46,7 +46,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXs-h5-aVs">
-                                        <rect key="frame" x="0.0" y="623" width="150" height="51"/>
+                                        <rect key="frame" x="8.6666666666666714" y="623" width="150" height="51"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="mro-MS-CET"/>
                                         </constraints>
@@ -70,6 +70,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n7J-gW-g3K" secondAttribute="bottom" constant="30" id="Uhm-Ek-VsO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="0Rj-gl-ci6" id="dQl-bd-OxC"/>
+                        <outlet property="redLight" destination="Rws-tb-3G0" id="Xh5-Ux-Q9M"/>
+                        <outlet property="startSwitchButton" destination="JXs-h5-aVs" id="a9M-ba-6wN"/>
+                        <outlet property="yellowLight" destination="ddj-oA-E23" id="m7O-da-X4B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
