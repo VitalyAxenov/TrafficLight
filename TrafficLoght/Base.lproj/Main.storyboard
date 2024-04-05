@@ -54,6 +54,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Button">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startSwithcButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6n-Hc-ZvT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
